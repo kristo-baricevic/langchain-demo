@@ -19,7 +19,8 @@ const tools = [
 ];
 
 const executor = await initializeAgentExecutorWithOptions(tools, model, {
-    agentType: "zero-shot-react-description"
+    agentType: "zero-shot-react-description",
+    verbose: true,
 })
 console.log("loaded the agent...");
 
