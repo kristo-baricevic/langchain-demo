@@ -1,8 +1,11 @@
 import {OpenAI } from 'langchain/llms/openai';
-
-require('dotenv').config()
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 const model = new OpenAI({
-    openAIApiKey: "",
     temperature: 0.9,
-})
+});
+
+const res = await model.call("What would be a good name for a company that makes colorful socks?");
+
+console.log(res);
