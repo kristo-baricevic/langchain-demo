@@ -23,3 +23,5 @@ const chain = new LLMChain({
 const res = await chain.call({
     product: "colorful socks",
 });
+
+console.log(res);
