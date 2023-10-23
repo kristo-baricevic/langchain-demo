@@ -1,0 +1,22 @@
+{
+  "name": "langchain-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristo-baricevic/langchain-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristo-baricevic/langchain-demo/issues"
+  },
+  "homepage": "https://github.com/kristo-baricevic/langchain-demo#readme",
+  "dependencies": {
+    "langchain": "^0.0.170"
+  }
+}
