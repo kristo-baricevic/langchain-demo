@@ -6,6 +6,8 @@ import { SerpAPI } from "langchain/tools";
 import { Calculator } from "langchain/tools/calculator";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 
+//agent.js uses OpenAI and SerpAPI to access data from the internet
+
 //initiate a new OpenAI model
 const model = new OpenAI({
     temperature: 0
