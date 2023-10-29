@@ -6,10 +6,12 @@ import { SerpAPI } from "langchain/tools";
 import { Calculator } from "langchain/tools/calculator";
 import { initializeAgentExecutorWithOptions } from "langchain/agents";
 
+//initiate a new OpenAI model
 const model = new OpenAI({
     temperature: 0
 });
 
+//set tools to create a new instance of SerpAPI to surf the internet
 const tools = [
     new SerpAPI(process.env.SERPAPI_API_KEY, {
         hl: 'en',
