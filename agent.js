@@ -20,14 +20,17 @@ const tools = [
     new Calculator(),
 ];
 
+
 const executor = await initializeAgentExecutorWithOptions(tools, model, {
     agentType: "zero-shot-react-description",
     verbose: true,
 })
 console.log("loaded the agent...");
 
+//call api with a prompt
 const res = await executor.call({
     input: "Who is Olivia Wilde's boyfriend? What is his current age raised to the 0.23 power?"
 });
 
+//log the response
 console.log(res.output);
